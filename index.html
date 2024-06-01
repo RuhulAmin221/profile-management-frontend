@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+</head>
+
+<body class="bg-gray-100/70">
+    <div class="text-6xl font-black text-center relative top-48">
+        Welcome to Profile Management System
+    </div>
+    <div class="hero min-h-screen">
+        <div class="hero-content flex-col px-0 lg:flex-row-reverse">
+            <div class="text-center lg:text-left lg:pl-6">
+                <p class="mt-14 lg:mt-0 text-3xl lg:text-5xl font-bold">Login now!</p>
+                <p class="py-6 font-medium text-slate-500 w-[400px] leading-8">
+                    Profile Management System. Here the profile page management system is created using CRUD
+                    Express REST API
+                </p>
+            </div>
+            <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-gray-800/25 ">
+                <form onSubmit={handleLogin} class="card-body pb-0">
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-semibold">Email</span>
+                        </label>
+                        <input type="email" name="email" id="email" placeholder="Email" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-semibold">Password</span>
+                        </label>
+                        <div class="relative">
+                            <input type="password" name="password" id="password" placeholder="Password"
+                                class="input w-full input-bordered" required />
+                        </div>
+                        <label class="label">
+                            <a href="#" class="label-text-alt link link-hover font-semibold">Forgot password?</a>
+                        </label>
+                    </div>
+                    <div class="form-control mt-3">
+                        <button onclick="handleLogin()" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+                <div class="p-8 pt-0">
+                    <p class="h-10 font-semibold">
+                        New Here! Please
+                        <a href="register.html"><button class="btn btn-link px-1">Register</button></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

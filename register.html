@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Register</title>
+</head>
+
+<body class="bg-gray-100/70">
+
+    <div class="text-center pt-16 ">
+        <h1 class="font-bold text-6xl">Register now!</h1>
+        <p class="py-6 mx-auto font-medium text-slate-500 w-[400px] leading-8">Ready to join ? Register now to join and
+            discover</p>
+    </div>
+
+    <div class="hero min-h-screen">
+        <div class="hero-content flex-col lg:flex-row">
+
+
+            <div class="card shrink-0 w-[768px] max shadow-2xl bg-gray-800/25 ">
+
+                <form class="card-body pb-4">
+
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-semibold">First Name</span>
+                        </label>
+                        <input type="text" name="fname" id="fname" placeholder="Your Name" class="input input-bordered"
+                            required>
+                    </div>
+
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-semibold">Last Name</span>
+                        </label>
+                        <input type="text" name="lname" id="lname" placeholder="Your Name" class="input input-bordered"
+                            required>
+                    </div>
+
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-semibold">Gender</span>
+                        </label>
+                        <input type="text" name="gender" id="gender" placeholder="Your Name"
+                            class="input input-bordered" required>
+                    </div>
+
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-semibold">Date of Birth</span>
+                        </label>
+                        <input type="date" name="dob" id="dob" placeholder="Your Name" class="input input-bordered"
+                            required>
+                    </div>
+
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text font-semibold">Email</span>
+                        </label>
+                        <input type="email" name="email" id="email" placeholder="Email" class="input input-bordered"
+                            required>
+                    </div>
+
+                    <label class="form-control">
+                        <div class="label">
+                            <span class="label-text font-semibold">Profile Image</span>
+                        </div>
+                        <input type="file" name="image" id="images" class="file-input file-input-bordered" />
+                    </label>
+
+                    <div class="form-control">
+
+                        <label class="label">
+                            <span class="label-text font-semibold">Password</span>
+                        </label>
+
+                        <div>
+                            <input type="password" name="password" id="password" placeholder="Password"
+                                class="input input-bordered w-full" required>
+                        </div>
+
+                        <label class="label mt-2">
+                            <span class="label-text font-semibold">Retype Password</span>
+                        </label>
+
+                        <div>
+                            <input type="password" name="reTypedPassword" id="reTypedPassword"
+                                placeholder="Retype Password" class="input input-bordered w-full" required>
+                        </div>
+
+                        <label class="label">
+                            <a href="#" class="label-text-alt link link-hover font-semibold">Forgot password?</a>
+                        </label>
+
+                    </div>
+
+                    <div class="form-control mt-4">
+                        <button onclick="handleRegister()" class="btn btn-primary font-semibold">Register</button>
+                    </div>
+
+                </form>
+                <div class="p-8 pt-0">
+                    <p class="h-10 font-semibold">
+                        Already have an account!
+                        <a href="index.html"><button class="btn btn-link px-1">Login</button></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
